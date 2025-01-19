@@ -1,7 +1,7 @@
 from PyQt6 import QtCharts
 from PyQt6.QtCharts import QChartView, QChart, QLineSeries, QDateTimeAxis, QValueAxis
 from PyQt6.QtCore import Qt, QDateTime, QDate
-from PyQt6.QtGui import QColor, QPen
+from PyQt6.QtGui import QColor
 
 
 class CentralWidget(QChartView):
@@ -122,53 +122,8 @@ class CentralWidget(QChartView):
         self.__line_series_FDP.append(
             QDateTime.currentDateTime().addDays(curret_date_diff_ende + 29).toMSecsSinceEpoch(), 4)
         self.__line_series_FDP.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 43).toMSecsSinceEpoch(), 3)
+            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 43).toMSecsSinceEpoch(), 14)
         self.__line_series_FDP.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 65).toMSecsSinceEpoch(), 4)
-
-        self.__line_series_AFD.append(QDateTime.currentDateTime().addDays(curret_date_diff_ende).toMSecsSinceEpoch(),
-                                      18)
-        self.__line_series_AFD.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 8).toMSecsSinceEpoch(), 19)
-        self.__line_series_AFD.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 29).toMSecsSinceEpoch(), 18)
-        self.__line_series_AFD.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 43).toMSecsSinceEpoch(), 19)
-        self.__line_series_AFD.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 65).toMSecsSinceEpoch(), 20)
-
-        self.__line_series_LINKE.append(QDateTime.currentDateTime().addDays(curret_date_diff_ende).toMSecsSinceEpoch(),
-                                      2)
-        self.__line_series_LINKE.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 8).toMSecsSinceEpoch(), 3)
-        self.__line_series_LINKE.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 29).toMSecsSinceEpoch(), 3)
-        self.__line_series_LINKE.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 43).toMSecsSinceEpoch(), 3)
-        self.__line_series_LINKE.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 65).toMSecsSinceEpoch(), 4)
-
-
-        self.__line_series_BSW.append(QDateTime.currentDateTime().addDays(curret_date_diff_ende).toMSecsSinceEpoch(),
-                                      6)
-        self.__line_series_BSW.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 8).toMSecsSinceEpoch(), 6)
-        self.__line_series_BSW.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 29).toMSecsSinceEpoch(), 5)
-        self.__line_series_BSW.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 43).toMSecsSinceEpoch(), 5)
-        self.__line_series_BSW.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 65).toMSecsSinceEpoch(), 5)
-
-        self.__line_series_ANDERE.append(QDateTime.currentDateTime().addDays(curret_date_diff_ende).toMSecsSinceEpoch(),
-                                      9)
-        self.__line_series_ANDERE.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 8).toMSecsSinceEpoch(), 7)
-        self.__line_series_ANDERE.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 29).toMSecsSinceEpoch(), 8)
-        self.__line_series_ANDERE.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 43).toMSecsSinceEpoch(), 9)
-        self.__line_series_ANDERE.append(
-            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 65).toMSecsSinceEpoch(), 7)
+            QDateTime.currentDateTime().addDays(curret_date_diff_ende + 65).toMSecsSinceEpoch(), 14)
 
         self.setChart(chart)
